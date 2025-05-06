@@ -11,8 +11,8 @@ function setup() {
   mover = Mover.createStandardMoverAt(10,height/2)
   G = createVector(0,2)
   jumpVector = createVector(0,-70)
-  leftVector = createVector(-3,0)
-  rightVector = createVector(3,0)
+  leftVector = createVector(-5,0)
+  rightVector = createVector(2,0)
   ellipseMode(RADIUS)
 }
 

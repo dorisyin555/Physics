@@ -41,7 +41,8 @@ function keyPressed() {
   if( keyCode === RIGHT_ARROW ) {
     mover.applyForce(rightVector)
   }
-  
+
+  //the up and down doesn't work
     if( keyCode === UP_ARROW ) {
     mover.applyForce(upVector)
   }

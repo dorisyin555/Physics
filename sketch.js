@@ -5,6 +5,8 @@ let G
 let jumpVector 
 let leftVector
 let rightVector
+let upVector
+let downVector
 
 function setup() {
   createCanvas(400, 400);
@@ -13,6 +15,8 @@ function setup() {
   jumpVector = createVector(0,-70)
   leftVector = createVector(-5,0)
   rightVector = createVector(2,0)
+  upVector = createVector(0,3)
+  downVector = createVector(0,4)
   ellipseMode(RADIUS)
 }
 
@@ -36,6 +40,14 @@ function keyPressed() {
 
   if( keyCode === RIGHT_ARROW ) {
     mover.applyForce(rightVector)
+  }
+  
+    if( keyCode === UP_ARROW ) {
+    mover.applyForce(upVector)
+  }
+  
+    if( keyCode === DOWN_ARROW ) {
+    mover.applyForce(downVector)
   }
   
 }
